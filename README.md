@@ -21,6 +21,12 @@ Start nodemon for the application `npm run dev`
 
 Run the tests `npm test`
 
+Run all migrations `npm run migration`
+
+Run specific migration `npm run migration -- 1`
+
+Seed Database `psql -U user_name -d database_name -f ./path-to-seed-file.sql`
+
 ## Deploying
 
 When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run predeploy` which will run an npm audit and then `npm run deploy` which will push to this remote's master branch.

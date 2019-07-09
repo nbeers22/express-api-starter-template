@@ -1,9 +1,9 @@
 const app = require('../src/app.js');
 
 describe('App', () => {
-  it('GET / responds with 200 containing Hello World!', () => {
+  it('GET /articles responds with list of articles from blogful_articles table', () => {
     return supertest(app)
-      .get('/')
+      .get('/articles')
       .expect(200, "Hello World!")
   });
 });
